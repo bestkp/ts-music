@@ -1,0 +1,15 @@
+.header {
+    background: #001529;
+    .headerBox {
+        width: 980px;
+        margin: 0 auto;
+        display: flex;
+        .headerLogo {
+            display: block;
+            width: 176px;
+            height: 70px;
+            background: url("https://s2.music.126.net/style/web2/img/frame/topbar.png?268c40810147ed90416404b4f84a31ae") no-repeat;
+        }
+    }
+
+}

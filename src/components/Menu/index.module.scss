@@ -1,0 +1,11 @@
+.menuWrapper {
+    background: #001529;
+    .menuStyle {
+        font-size: 20px;
+    }
+    :global {
+        .ant-menu-horizontal {
+            line-height: 70px;
+        }
+    }
+}
