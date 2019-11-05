@@ -1,4 +1,4 @@
-import {INCREMENT, DECREMENT} from '../constant'
+import {INCREMENT, DECREMENT, GETLIST, CHANGENAME} from '../constant'
 
 export interface IIncrementAction {
     type: INCREMENT
@@ -17,3 +17,14 @@ export const increment = () => ({
 export const decrement = () => ({
     type: DECREMENT
 });
+
+export const getList = (obj:any) => ({
+    type: GETLIST,
+    payload: obj
+})
+export const changeName = (name:string) => ({
+    type: GETLIST,
+    payload: name
+})
+
+

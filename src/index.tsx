@@ -2,21 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from "react-redux";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import store from './redux/store'
+import store from '@/redux/reducer'
 import * as serviceWorker from './serviceWorker';
-import Header from "components/Header/Index";
 import Recommand from '@/pages/Recommand/Index'
-
-const About: React.FC = () => {
-    return <h1>About</h1>;
-};
+import About from '@/pages/About/Index'
+import About1 from '@/pages/About1/Index'
 
 ReactDOM.render(
     <Provider store={store}>
         <Router>
-            <Header/>
+            {/* <Header/> */}
             <Route exact path="/" component={Recommand} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/about1" component={About1} />
         </Router>
     </Provider>, document.getElementById('root'));
 
